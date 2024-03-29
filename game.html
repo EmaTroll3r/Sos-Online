@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>WebSocket Demo</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <!--<button id="drawButton">Draw</button>-->
+    <p id="playerTurn">Giocatore di turno: </p>
+    <hr>
+    <div id="game-images">
+        <img id="card1" class="card" src="">
+        <img id="card2" class="card">
+        <img id="card3" class="card">
+    </div>
+    
+    <select id="context-menu" size="3" style="display: none; position: fixed;">
+        <option>Gioca</option>
+        <option>Blocca</option>
+        <option>Scaricabarile</option>
+    </select>
+    
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-database.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

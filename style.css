@@ -1,0 +1,93 @@
+body {
+    font-family: Arial, sans-serif;
+    /*background-color: #add8e6;*/
+    background-image: url('images/background.webp'); /* Aggiungi questa linea */
+    background-size: cover; /* Questa linea fa in modo che l'immagine di sfondo copra l'intero elemento */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    margin: 0;
+    /*padding-top: 50px;*/
+}
+
+hr {
+    border-color: #000000;
+    border-width: 2px;
+    width: 80%;
+    margin-right: auto;
+    margin-left: 1%;
+    border-radius: 5px;
+}
+
+h1 {
+    color: #333;
+}
+button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+#nickname {
+    margin: 10px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+#game-images {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+#game-images img {
+    width: 28%; /* Riduci la dimensione delle immagini */
+    height: auto;
+    margin: 0 10px; /* Aggiungi un po' di spazio tra le immagini */
+    transition: transform 0.2s ease-in-out; /* Aggiungi una transizione alla proprietà transform */
+}
+
+#game-images img:active {
+    transform: scale(0.95); /* Riduci l'immagine del 5% */
+}
+
+#context-menu {
+    background-color: rgba(0, 0, 0, 0.8); /* Sfondo nero semi-trasparente */
+    color: white; /* Testo bianco */
+    border: none; /* Rimuovi il bordo predefinito */
+    border-radius: 5px; /* Angoli arrotondati */
+    padding: 10px; /* Spazio intorno al testo */
+    font-size: 16px; /* Dimensione del testo */
+    z-index: 1000; /* Assicurati che il menu a tendina sia sopra gli altri elementi */
+}
+
+#context-menu option {
+    padding: 5px 10px; /* Spazio intorno al testo di ogni opzione */
+}
+
+#dropdown-menu a {
+    color: white; /* Colore del testo */
+    text-decoration: none; /* Rimuovi il sottolineato */
+    display: block; /* Rendi ogni link un blocco, così l'intera area è cliccabile */
+    padding: 5px; /* Aggiungi un po' di spazio intorno al testo */
+}
+
+#dropdown-menu a:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Aggiungi uno sfondo leggermente bianco quando il mouse passa sopra */
+}
+
+.centered-image {
+    position: fixed;
+    width: 28%; /* Riduci la dimensione delle immagini */
+    height: auto;
+    z-index: 9999;
+}
+
+#drawButton {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 100;
+    width: 80px;
+    height: 30px;
+}
